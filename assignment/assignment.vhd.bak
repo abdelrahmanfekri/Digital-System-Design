@@ -1,0 +1,29 @@
+library ieee;
+library work;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+use work.adder_package.all;
+
+
+
+
+entity assignment is
+port(
+	x    :in std_logic_vector(2 downto 0) ;
+	y    :in std_logic_vector(2 downto 0) ;
+	s   :out std_logic_vector(3 downto 0));
+end adder4;
+
+architecture arch of assignment is 
+
+signal c: std_logic_vector(2 downto 0);
+
+
+
+begin
+stage0: adder port map('0',x(0),y(0),s(0),c(0));
+stage1: adder port map(c(0),x(1),y(1),s(1),c(1));
+stage2: adder port map(c(1),x(2),y(2),s(2),s(3));
+
+end arch;
+

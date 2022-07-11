@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "srv",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "sens",
+					"strict" : false
+				},
+				{
+					"name" : "motion",
+					"strict" : false
+				},
+				{
+					"name" : "sens1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

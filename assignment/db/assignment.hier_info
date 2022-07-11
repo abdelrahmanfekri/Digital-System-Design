@@ -1,0 +1,69 @@
+|assignment
+x[0] => adder:stage0.x
+x[1] => adder:stage1.x
+x[2] => adder:stage2.x
+y[0] => adder:stage0.y
+y[1] => adder:stage1.y
+y[2] => adder:stage2.y
+s[0] << adder:stage0.s
+s[1] << adder:stage1.s
+s[2] << adder:stage2.s
+s[3] << adder:stage2.cout
+BCD[0] << Mux11.DB_MAX_OUTPUT_PORT_TYPE
+BCD[1] << Mux10.DB_MAX_OUTPUT_PORT_TYPE
+BCD[2] << Mux9.DB_MAX_OUTPUT_PORT_TYPE
+BCD[3] << Mux8.DB_MAX_OUTPUT_PORT_TYPE
+BCD[4] << Mux7.DB_MAX_OUTPUT_PORT_TYPE
+BCD[5] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+BCD[6] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+BCD[7] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+BCD[8] << <GND>
+BCD[9] << <GND>
+BCD[10] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+BCD[11] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+BCD[12] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+BCD[13] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|assignment|adder:stage0
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+x => s.IN0
+x => cout.IN0
+x => cout.IN1
+y => s.IN1
+y => cout.IN1
+y => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|assignment|adder:stage1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+x => s.IN0
+x => cout.IN0
+x => cout.IN1
+y => s.IN1
+y => cout.IN1
+y => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|assignment|adder:stage2
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+x => s.IN0
+x => cout.IN0
+x => cout.IN1
+y => s.IN1
+y => cout.IN1
+y => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
